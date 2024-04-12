@@ -81,7 +81,7 @@ export default function Main(props) {
             setStatus={setStatus}
             attrs={{
               palletRpc: 'balances',
-              callable: 'transfer',
+              callable: 'transferAllowDeath', //changed the method from transfer to transferAllowDeath, without it, front-end will not work when sending tokens.
               inputParams: [addressTo, amount],
               paramFields: [true, true],
             }}
